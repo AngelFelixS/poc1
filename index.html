@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IA Teachable Machine con Webcam</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Mi IA de Teachable Machine</h1>
+
+  <div class="container">
+    <video id="webcam" autoplay></video>
+    <canvas id="captured-image"></canvas>
+  </div>
+
+  <button id="capture-btn">Capturar Imagen</button>
+  <div id="result"></div>
+  <input id="slider" type="range" min="0" max="100" step="1" value="0">
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+
+ 
+  <script src="./js/script.js"></script>
+</body>
+</html>
